@@ -15,17 +15,17 @@ const Logo: FC<ILogo> = ({overrideColor}) => (
     <path
       d="M47.4985 3.04224V166.679H132.138"
       stroke={overrideColor || "white"}
-      stroke-width="17"
+      strokeWidth="17"
     />
     <path
       d="M8 169.5L78.9091 19.9702L154.708 169.5"
       stroke={overrideColor || "white"}
-      stroke-width="17"
+      strokeWidth="17"
     />
     <path
       d="M81.354 14.3274H142.972C142.972 14.3274 188 33.8885 188 90.1268C188 146.365 152.451 161.036 152.451 161.036"
       stroke={overrideColor || "white"}
-      stroke-width="17"
+      strokeWidth="17"
     />
   </svg>
 );

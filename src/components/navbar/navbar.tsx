@@ -5,35 +5,30 @@ import styles from "./navbar.module.css";
 import Link from "next/link";
 import Logo from "./logo";
 
-function getWindowDimensions() {
-  const {innerWidth: width, innerHeight: height} = window;
-  return {
-    width,
-    height,
-  };
-}
-
 const Navbar = () => {
   const [scrolled, setScrolled] = useState<boolean>(false);
   const [screenScrolled, setScreenScrolled] = useState<boolean>(false);
-  const [windowDimensions, setWindowDimensions] = useState(
-    getWindowDimensions()
-  );
+  const [windowDimensions, setWindowDimensions] = useState({
+    width: 0,
+    height: 0,
+  });
 
   useEffect(() => {
-    function handleResize() {
-      const {innerWidth, innerHeight} = window;
-      if (
-        innerWidth !== windowDimensions.width ||
-        innerHeight !== windowDimensions.height
-      ) {
-        setWindowDimensions({width: innerWidth, height: innerHeight});
-      }
+    if (typeof window !== "undefined") {
+      const handleResize = () => {
+        const {innerWidth, innerHeight} = window;
+        if (
+          innerWidth !== windowDimensions.width ||
+          innerHeight !== windowDimensions.height
+        ) {
+          setWindowDimensions({width: innerWidth, height: innerHeight});
+        }
+      };
+      handleResize();
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
     }
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, [windowDimensions]);
+  }, [windowDimensions.width, windowDimensions.height]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -55,7 +50,7 @@ const Navbar = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [windowDimensions.height]);
 
   return (
     <header className={`${styles.main} ${scrolled ? styles.scrolled : ""}`}>

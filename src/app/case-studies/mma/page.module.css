@@ -1,0 +1,219 @@
+.main {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(#EAAACA, #E787B0);
+    position: absolute;
+    top: 0;
+}
+
+.heroBg {
+    width: 100%;
+    height: 40%;
+    overflow: visible;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1;
+}
+
+.heroBg img {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+.heroSection {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    margin-left: 10%;
+    align-items: center;
+    height: 100%;
+}
+
+.clipart1 {
+    position: relative;
+    top: 15%;
+    left: 2px;
+}
+
+
+.floatingArt {
+    animation-name: floatingArt;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floatingArt {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+
+.heroCard {
+    width: 40%;
+    max-width: 650px;
+    border-radius: 45px;
+    background: rgba(255, 255, 255, 0.11);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15.2px);
+    -webkit-backdrop-filter: blur(15.2px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 57px 51px;
+    color: white;
+}
+
+.cardHeader {
+    height: 124px;
+    display: flex;
+    align-items: center;
+}
+
+.cardHeader p {
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.cardBody p {
+    font-weight: 500;
+    text-align: justify;
+}
+
+.caseStudyContainer {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.caseStudyMain {
+    max-width: 1112px;
+    padding: 80px 40px;
+}
+
+.section h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.section p {
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.caseStudyCard {
+    color: white;
+    border-radius: 19px;
+    background-image: linear-gradient(#EAABCA, #E788B0);
+    padding: 57px 34px;
+}
+
+.caseStudyCard h3 {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.caseStudyCardHeader {
+    display: grid;
+    grid: auto / 20% 40% 40%;
+    text-align: start;
+}
+
+.caseStudyTypography h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.caseStudyTypography p {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    line-height: 10px;
+}
+
+.colorPaletteContainer {
+    border-radius: 16px;
+    border: 20px solid #EBA6C5;
+    background-color: #EBA6C5;
+    margin: 45px 100px;
+    justify-content: space-between;
+}
+
+.colorPaletteInner {
+    border-radius: 16px;
+    border: 1px solid white;
+    background-color: white;
+    padding: 30px 65px;
+    display: flex;
+    align-items: center;
+}
+
+.colorPaletteTitle {
+    color: black;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 37px;
+    margin-right: 32px;
+}
+
+.colorsContainer {
+    display: flex;
+}
+
+.color {
+    border-radius: 50%;
+    border: 10px solid #EDEDED;
+    height: 110px;
+    width: 110px;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px;
+}
+
+.pageDesignContainer {
+    padding: 100px 0;
+}
+
+.pageDesignTitle {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.pageDesignImg {
+    margin-top: 100px;
+}
+
+.pageDesignImg img {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.keyContainer {
+    padding-bottom: 100px;
+}
+
+.keyTitle {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.keyContent {
+    font-size: 20px;
+    margin-top: 20px;
+}

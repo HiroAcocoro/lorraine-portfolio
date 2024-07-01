@@ -1,0 +1,22 @@
+.heroContainer {
+    height: calc(100vh - 107px);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heroMessage {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.heroMessage b {
+    font-weight: 900;
+    font-size: 58px;
+    text-wrap: nowrap;
+}
+
+.heroMessage p {
+    font-size: 24px;
+}

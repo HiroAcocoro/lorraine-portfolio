@@ -1,8 +1,8 @@
 import styles from "./page.module.css";
 import Image from "next/image";
 import {EB_Garamond, Montserrat} from "next/font/google";
-import Section from "@/components/case-studies/Section";
 import caseStudies from "@/constants/case-studies";
+import Section from "@/components/case-studies/Section";
 
 const eb_garamond = EB_Garamond({
   subsets: ["latin"],

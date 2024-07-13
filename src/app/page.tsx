@@ -2,7 +2,8 @@
 
 import {ParallaxProvider} from "react-scroll-parallax";
 import styles from "./page.module.css";
-import HeroSection from "@/components/home-page/HeroSection";
+import HeroSection from "@/components/home-page/hero-section/HeroSection";
+import FeatureProjectsSection from "@/components/home-page/feature-projects-section/FeatureProjectsSection";
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
       <div className={styles.mainContainer}>
         <ParallaxProvider>
           <HeroSection />
-          <div style={{height: "100vh"}} />
+          <FeatureProjectsSection />
         </ParallaxProvider>
       </div>
     </main>

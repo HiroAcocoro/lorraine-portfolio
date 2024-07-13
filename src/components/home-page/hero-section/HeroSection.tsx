@@ -1,7 +1,7 @@
 import styles from "./hero-section.module.css";
 import Image from "next/image";
 import {landingPage} from "@/constants";
-import ImageComponent from "../common/ImageComponent";
+import ImageComponent from "../../common/ImageComponent";
 
 const HeroSection = () => {
   const layer1ParallaxSpeed = -25;

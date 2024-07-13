@@ -37,31 +37,6 @@
     left: 2px;
 }
 
-
-.floatingArt {
-    animation-name: floatingArt;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    margin-left: 30px;
-    margin-top: 5px;
-}
-
-@keyframes floatingArt {
-    0% {
-        transform: translate(0, 0px);
-    }
-
-    50% {
-        transform: translate(0, 15px);
-    }
-
-    100% {
-        transform: translate(0, -0px);
-    }
-}
-
-
 .heroCard {
     width: 40%;
     max-width: 650px;

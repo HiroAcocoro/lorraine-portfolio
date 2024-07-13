@@ -55,7 +55,7 @@ const mmaCaseStudy = () => {
             </p>
           </div>
         </div>
-        <div className={styles.floatingArt}>
+        <div className="animated-component">
           <Image
             src="/mma-art-2.png"
             alt="art-mma-devices"

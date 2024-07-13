@@ -11,6 +11,7 @@ interface IImageComponent {
   width: number;
   height: number;
   flipHorz?: boolean;
+  isGlass?: boolean;
 }
 
 const ImageComponent: FC<IImageComponent> = ({
@@ -23,6 +24,7 @@ const ImageComponent: FC<IImageComponent> = ({
   width,
   height,
   flipHorz,
+  isGlass,
 }) => {
   return (
     <div
@@ -37,7 +39,18 @@ const ImageComponent: FC<IImageComponent> = ({
         overflow: "hidden",
       }}
     >
-      <Image src={src} alt={src} quality={100} width={width} height={height} />
+      <Image
+        src={src}
+        alt={src}
+        quality={100}
+        width={width}
+        height={height}
+        style={{
+          filter: isGlass ? "blur(5px)" : "",
+          clipPath: isGlass ? "circle(50% at center)" : "",
+          padding: isGlass ? "15px" : "",
+        }}
+      />
     </div>
   );
 };

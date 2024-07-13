@@ -33,17 +33,96 @@ const HeroSection = () => {
         left="20%"
         top="-590px"
         rotate="204deg"
-        opacity={0.3}
+        opacity={0.2}
       />
       <ImageComponent
-        src="/home-art-1.png"
-        width={1147}
-        height={979}
-        top="0%"
-        right="-15%"
-        rotate="3deg"
+        src="/home-art-2.png"
+        width={747}
+        height={629}
+        top="20%"
+        right="0%"
         opacity={0.3}
-        flipHorz
+      />
+      <div>
+        <ImageComponent
+          src="/home-art-3.png"
+          width={165}
+          height={165}
+          top="70%"
+          left="110px"
+          isGlass
+        />
+        <ImageComponent
+          src="/home-art-4.svg"
+          width={363}
+          height={258}
+          top="69%"
+          left="-20px"
+        />
+        <ImageComponent
+          src="/home-art-3.png"
+          width={38}
+          height={38}
+          top="82%"
+          left="250px"
+        />
+      </div>
+      <ImageComponent
+        src="/home-art-5.png"
+        width={49}
+        height={49}
+        top="18%"
+        left="160px"
+      />
+      <ImageComponent
+        src="/home-art-3.png"
+        width={165}
+        height={165}
+        top="1%"
+        left="18%"
+        isGlass
+      />
+      <ImageComponent
+        src="/home-art-5.png"
+        width={135}
+        height={135}
+        top="13%"
+        left="40%"
+        isGlass
+      />
+      <div>
+        <ImageComponent
+          src="/home-art-5.png"
+          width={120}
+          height={120}
+          rotate="310deg"
+          top="5%"
+          right="270px"
+          isGlass
+        />
+        <ImageComponent
+          src="/home-art-4.svg"
+          width={201}
+          height={158}
+          rotate="310deg"
+          top="170px"
+          right="200px"
+        />
+        <ImageComponent
+          src="/home-art-3.png"
+          width={211}
+          height={205}
+          top="10%"
+          right="140px"
+        />
+      </div>
+      <ImageComponent
+        src="/home-art-3.png"
+        width={125}
+        height={125}
+        top="80%"
+        right="10%"
+        isGlass
       />
     </div>
   );

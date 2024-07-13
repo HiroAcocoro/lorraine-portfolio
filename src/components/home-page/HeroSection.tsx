@@ -4,6 +4,8 @@ import {landingPage} from "@/constants";
 import ImageComponent from "../common/ImageComponent";
 
 const HeroSection = () => {
+  const layer1ParallaxSpeed = -25;
+  const layer2ParallaxSpeed = -10;
   return (
     <div>
       <div className={styles.heroContainer}>
@@ -11,13 +13,16 @@ const HeroSection = () => {
           <b>{landingPage.hero.title}</b>
           <p>{landingPage.hero.content}</p>
         </div>
-        <Image
-          src="/hero-art-1.png"
-          alt="hero-art-1"
-          quality={100}
-          width={797}
-          height={481}
-        />
+        <div className="animated-component">
+          <Image
+            src="/hero-art-1.png"
+            alt="hero-art-1"
+            quality={100}
+            width={797}
+            height={481}
+            style={{position: "relative", zIndex: 999}}
+          />
+        </div>
       </div>
       <ImageComponent
         src="/home-art-1.png"
@@ -25,15 +30,17 @@ const HeroSection = () => {
         height={722}
         top="30%"
         left="-400px"
+        parallaxSpeed={layer1ParallaxSpeed}
       />
       <ImageComponent
         src="/home-art-1.png"
         width={971}
         height={722}
         left="20%"
-        top="-590px"
+        top="-440px"
         rotate="204deg"
-        opacity={0.2}
+        opacity={[0.2, 0.4]}
+        parallaxSpeed={layer1ParallaxSpeed}
       />
       <ImageComponent
         src="/home-art-2.png"
@@ -41,7 +48,8 @@ const HeroSection = () => {
         height={629}
         top="20%"
         right="0%"
-        opacity={0.3}
+        opacity={[0.2, 0.4]}
+        parallaxSpeed={layer1ParallaxSpeed}
       />
       <div>
         <ImageComponent
@@ -51,6 +59,7 @@ const HeroSection = () => {
           top="70%"
           left="110px"
           isGlass
+          parallaxSpeed={layer2ParallaxSpeed}
         />
         <ImageComponent
           src="/home-art-4.svg"
@@ -81,6 +90,7 @@ const HeroSection = () => {
         top="1%"
         left="18%"
         isGlass
+        parallaxSpeed={layer2ParallaxSpeed}
       />
       <ImageComponent
         src="/home-art-5.png"
@@ -89,6 +99,7 @@ const HeroSection = () => {
         top="13%"
         left="40%"
         isGlass
+        parallaxSpeed={layer2ParallaxSpeed}
       />
       <div>
         <ImageComponent
@@ -96,9 +107,10 @@ const HeroSection = () => {
           width={120}
           height={120}
           rotate="310deg"
-          top="5%"
-          right="270px"
+          top="3%"
+          right="290px"
           isGlass
+          parallaxSpeed={layer2ParallaxSpeed}
         />
         <ImageComponent
           src="/home-art-4.svg"
@@ -123,6 +135,7 @@ const HeroSection = () => {
         top="80%"
         right="10%"
         isGlass
+        parallaxSpeed={layer2ParallaxSpeed}
       />
     </div>
   );

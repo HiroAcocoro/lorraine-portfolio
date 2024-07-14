@@ -45,12 +45,17 @@
     opacity: 0;
 }
 
-.projectCardImgArtContainer.animate__slide_in img {
+.projectCardImgArtContainer.animate__slide_in_bl img {
     -webkit-animation: slide-in-blurred-bl 1.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both, erratic-floating 2s 1.5s infinite ease-in-out;
     animation: slide-in-blurred-bl 1.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both, erratic-floating 2s 1.5s infinite ease-in-out;
 }
 
-@-webkit-keyframes slide-in-blurred-bl {
+.projectCardImgArtContainer.animate__slide_in_skew img {
+    -webkit-animation: slide-in-blurred-skew 1.5s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    animation: slide-in-blurred-skew 1.5s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+}
+
+@keyframes slide-in-blurred-bl {
     0% {
         -webkit-transform: translate(-1000px, 1000px) skew(-80deg, -10deg);
         transform: translate(-1000px, 1000px) skew(-80deg, -10deg);
@@ -72,23 +77,26 @@
     }
 }
 
-@keyframes slide-in-blurred-bl {
+@keyframes slide-in-blurred-skew {
     0% {
-        -webkit-transform: translate(-1000px, 1000px) skew(-80deg, -10deg);
-        transform: translate(-1000px, 1000px) skew(-80deg, -10deg);
-        -webkit-transform-origin: 100% 100%;
-        transform-origin: 100% 100%;
-        -webkit-filter: blur(40px);
+        transform: translateX(1000px) skew(-80deg, -10deg) scale(1, 0.5);
+        ;
         filter: blur(40px);
         opacity: 0;
     }
 
+    50% {
+        transform: translateX(0) skew(20deg, 0deg) scale(1, 1);
+        filter: blur(0px);
+        opacity: 1;
+    }
+
+    70% {
+        transform: translateX(0) skew(-20deg, 0deg) scale(1, 1);
+    }
+
     100% {
-        -webkit-transform: translate(0, 0) skew(0deg, 0deg);
-        transform: translate(0, 0) skew(0deg, 0deg);
-        -webkit-transform-origin: 50% 50%;
-        transform-origin: 50% 50%;
-        -webkit-filter: blur(0);
+        transform: translateX(0) skew(0deg, 0deg) scale(1, 1);
         filter: blur(0);
         opacity: 1;
     }

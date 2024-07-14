@@ -20,6 +20,7 @@ export default [
       alt: "rocket-img",
       top: "-100px",
       left: "-80px",
+      animation: "animate__slide_in_bl",
     },
   },
   {
@@ -37,12 +38,13 @@ export default [
     boxShadow: "rgb(42 44 203 / 65%) 0px 5px 10px",
     reversed: true,
     cardImgAsset: {
-      src: "/featured-project-art-1.png",
-      w: 198,
-      h: 229,
-      alt: "rocket-img",
-      top: "-100px",
-      left: "-80px",
+      src: "/featured-project-art-2.png",
+      w: 209,
+      h: 152,
+      alt: "cat-img",
+      top: "-150px",
+      left: "20px",
+      animation: "animate__slide_in_skew",
     },
   },
 ];

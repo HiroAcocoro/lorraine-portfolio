@@ -25,6 +25,7 @@ interface IProjectCard {
     alt: string;
     top: string;
     left: string;
+    animation: string;
   };
 }
 
@@ -59,7 +60,7 @@ const ProjectCard: FC<IProjectCard> = ({content, artAsset}) => {
     <div className={styles.projectContainer}>
       <div
         className={`${styles.projectCardImgArtContainer} ${
-          inView ? styles.animate__slide_in : styles.hidden
+          inView ? styles[artAsset.animation] : styles.hidden
         }`}
       >
         <Image
@@ -71,7 +72,8 @@ const ProjectCard: FC<IProjectCard> = ({content, artAsset}) => {
           style={{
             position: "absolute",
             top: artAsset.top,
-            left: artAsset.left,
+            left: content.reversed ? "" : artAsset.left,
+            right: content.reversed ? artAsset.left : "",
             zIndex: 20,
           }}
         />

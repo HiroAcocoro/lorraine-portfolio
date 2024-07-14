@@ -11,7 +11,11 @@ const FeatureProjectsSection = () => {
 
       <div className={styles.featuredProjectsContainer}>
         {featuredProjects.map((project) => (
-          <ProjectCard key={project.title} content={project} />
+          <ProjectCard
+            key={project.title}
+            content={project}
+            artAsset={project.cardImgAsset}
+          />
         ))}
       </div>
     </div>

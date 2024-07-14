@@ -32,6 +32,90 @@
     justify-content: center;
 }
 
+.projectContainer {
+    margin-top: 30%;
+}
+
+.projectCardImgArtContainer {
+    position: relative;
+    z-index: 20;
+}
+
+.projectCardImgArtContainer.hidden {
+    opacity: 0;
+}
+
+.projectCardImgArtContainer.animate__slide_in img {
+    -webkit-animation: slide-in-blurred-bl 1.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both, erratic-floating 2s 1.5s infinite ease-in-out;
+    animation: slide-in-blurred-bl 1.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both, erratic-floating 2s 1.5s infinite ease-in-out;
+}
+
+@-webkit-keyframes slide-in-blurred-bl {
+    0% {
+        -webkit-transform: translate(-1000px, 1000px) skew(-80deg, -10deg);
+        transform: translate(-1000px, 1000px) skew(-80deg, -10deg);
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        -webkit-filter: blur(40px);
+        filter: blur(40px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translate(0, 0) skew(0deg, 0deg);
+        transform: translate(0, 0) skew(0deg, 0deg);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-blurred-bl {
+    0% {
+        -webkit-transform: translate(-1000px, 1000px) skew(-80deg, -10deg);
+        transform: translate(-1000px, 1000px) skew(-80deg, -10deg);
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        -webkit-filter: blur(40px);
+        filter: blur(40px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translate(0, 0) skew(0deg, 0deg);
+        transform: translate(0, 0) skew(0deg, 0deg);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@keyframes erratic-floating {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(0, 13px);
+    }
+
+    50% {
+        transform: translate(12px, -5px);
+    }
+
+    75% {
+        transform: translate(5px, 2px);
+    }
+}
+
+
+
 .projectCard {
     width: 100%;
     border-radius: 45px;
@@ -43,7 +127,6 @@
     padding: 20px;
     color: white;
     display: flex;
-    margin-top: 30%;
 }
 
 .projectInfo {

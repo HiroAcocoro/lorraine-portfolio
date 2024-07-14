@@ -81,6 +81,7 @@ const mmaCaseStudy = () => {
           <Section content={caseStudies.n3} />
           <Section content={caseStudies.n4} />
           <div className={styles.section} style={{marginTop: "100px"}}>
+            {/* @TODO extract to component */}
             <div className={styles.caseStudyCard}>
               <div className={styles.caseStudyCardHeader}>
                 <h3>Typography</h3>

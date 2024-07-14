@@ -13,6 +13,14 @@ export default [
     gradientBgColor: "linear-gradient(to bottom, #EAABCA 0%, #E788B0 100%)",
     boxShadow: "rgb(177 100 132 / 65%) 0px 5px 10px",
     reversed: false,
+    cardImgAsset: {
+      src: "/featured-project-art-1.png",
+      w: 198,
+      h: 229,
+      alt: "rocket-img",
+      top: "-100px",
+      left: "-80px",
+    },
   },
   {
     title: "The World’s Best Selling Tool For The Home Service Industry",
@@ -28,5 +36,13 @@ export default [
     gradientBgColor: "linear-gradient(to bottom, #0094FF 0%, #002BC5 100%)",
     boxShadow: "rgb(42 44 203 / 65%) 0px 5px 10px",
     reversed: true,
+    cardImgAsset: {
+      src: "/featured-project-art-1.png",
+      w: 198,
+      h: 229,
+      alt: "rocket-img",
+      top: "-100px",
+      left: "-80px",
+    },
   },
 ];

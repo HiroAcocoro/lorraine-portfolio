@@ -3,7 +3,7 @@
 import {ParallaxProvider} from "react-scroll-parallax";
 import styles from "./page.module.css";
 import HeroSection from "@/components/home-page/hero-section/HeroSection";
-import FeatureProjectsSection from "@/components/home-page/feature-projects-section/FeatureProjectsSection";
+import FeatureProjectsSection from "@/components/home-page/featured-projects-section/FeaturedProjectsSection";
 
 export default function Home() {
   return (

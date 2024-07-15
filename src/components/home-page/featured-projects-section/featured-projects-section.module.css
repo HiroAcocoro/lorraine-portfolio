@@ -3,16 +3,8 @@
 }
 
 .sectionTitle p {
-    text-align: center;
     font-size: 85px;
     font-weight: 900;
-    text-transform: uppercase;
-    background: #F7CFE4;
-    background: linear-gradient(to right, #ff9acc 20%, #f8c6e0 30%, #f8d2e6 70%, #fce4f5 80%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 500% auto;
-    animation: textAnimate 3s ease-in-out infinite alternate;
 }
 
 @keyframes textAnimate {

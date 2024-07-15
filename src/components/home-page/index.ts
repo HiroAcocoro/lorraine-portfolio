@@ -1,2 +1,2 @@
 export * from "./hero-section/HeroSection";
-export * from "./feature-projects-section/FeatureProjectsSection";
+export * from "./featured-projects-section/FeaturedProjectsSection";

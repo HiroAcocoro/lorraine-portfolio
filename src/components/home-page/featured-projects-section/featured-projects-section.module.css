@@ -26,6 +26,7 @@
 }
 
 .projectContainer {
+    z-index: 99;
     margin-top: 30%;
 }
 

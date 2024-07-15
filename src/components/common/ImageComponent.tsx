@@ -14,6 +14,7 @@ interface IImageComponent {
   flipHorz?: boolean;
   isGlass?: boolean;
   parallaxSpeed?: number;
+  zIndexOverride?: number;
 }
 
 const ImageComponent: FC<IImageComponent> = ({
@@ -28,6 +29,7 @@ const ImageComponent: FC<IImageComponent> = ({
   flipHorz,
   isGlass,
   parallaxSpeed,
+  zIndexOverride,
 }) => {
   const getOpacityValues = (): EffectNumber => {
     if (!opacity) return [1, 1];
@@ -37,15 +39,15 @@ const ImageComponent: FC<IImageComponent> = ({
     <Parallax
       speed={parallaxSpeed || 0}
       opacity={getOpacityValues()}
+      rotateY={[flipHorz ? 360 : 0, flipHorz ? 360 : 0]}
       style={{
         position: "absolute",
         left: left || "",
         top: top || "",
         right: right || "",
         rotate: rotate || "0deg",
-        transform: flipHorz ? "scaleX(-1)" : "",
         overflow: "hidden",
-        zIndex: 1,
+        zIndex: zIndexOverride || 1,
       }}
     >
       <Image

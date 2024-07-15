@@ -39,7 +39,7 @@ const HeroSection = () => {
         left="20%"
         top="-440px"
         rotate="204deg"
-        opacity={[0.2, 0.4]}
+        opacity={[0.4, 0.2]}
         parallaxSpeed={layer1ParallaxSpeed}
       />
       <ImageComponent
@@ -48,7 +48,7 @@ const HeroSection = () => {
         height={629}
         top="20%"
         right="0%"
-        opacity={[0.2, 0.4]}
+        opacity={[0.4, 0.2]}
         parallaxSpeed={layer1ParallaxSpeed}
       />
       <div>

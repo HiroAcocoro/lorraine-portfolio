@@ -1,0 +1,22 @@
+.footerSectionContainer {
+    margin-top: 164px;
+    margin-bottom: 242px;
+}
+
+.footerTitle p {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.socialsWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.socialsContainer {
+    max-width: 465px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

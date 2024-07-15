@@ -5,6 +5,7 @@
 .sectionTitle p {
     font-size: 85px;
     font-weight: 900;
+    text-transform: uppercase;
 }
 
 @keyframes textAnimate {

@@ -2,7 +2,7 @@
     text-align: center;
     font-size: inherit;
     font-weight: inherit;
-    text-transform: uppercase;
+    text-transform: inherit;
     background: #F7CFE4;
     background: linear-gradient(to right, #ff9acc 20%, #f8c6e0 30%, #f8d2e6 70%, #fce4f5 80%);
     background-clip: text;

@@ -1,6 +1,6 @@
 import styles from "./featured-projects-section.module.css";
 import featuredProjects from "@/constants/featured-projects";
-import ProjectCard from "./porject-card/ProjectCard";
+import ProjectCard from "./project-card/ProjectCard";
 
 const FeatureProjectsSection = () => {
   return (

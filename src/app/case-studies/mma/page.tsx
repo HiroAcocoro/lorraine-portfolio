@@ -19,23 +19,14 @@ const mmaCaseStudy = () => {
     <div className={styles.main}>
       <div className={styles.heroBg}>
         <Image
-          src="/mma-bg-1.svg"
-          alt="background-1"
+          src="/mma-bg-1.png"
+          alt="background-image"
           layout="fill"
           objectFit="cover"
           quality={100}
         />
       </div>
       <div className={styles.heroSection}>
-        <div className={styles.clipart1}>
-          <Image
-            src="/mma-art-1.png"
-            width={219}
-            height={366}
-            alt="art-girl"
-            quality={100}
-          />
-        </div>
         <div className={styles.heroCard}>
           <div className={styles.cardHeader}>
             <Image
@@ -55,6 +46,7 @@ const mmaCaseStudy = () => {
             </p>
           </div>
         </div>
+        <div id="ultimate-spacer-jutsu" style={{margin: "0px 5%"}} />
         <div className="animated-component">
           <Image
             src="/mma-art-2.png"

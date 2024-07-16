@@ -1,6 +1,5 @@
 .main {
   min-height: 100vh;
-  background: rgb(150, 130, 217);
   background: linear-gradient(126deg, rgba(150, 130, 217, 1) 0%, rgba(154, 165, 241, 1) 42%, rgba(66, 205, 250, 1) 100%);
   color: white;
   display: flex;

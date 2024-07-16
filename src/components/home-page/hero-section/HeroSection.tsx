@@ -14,14 +14,15 @@ const HeroSection = () => {
           <p>{landingPage.hero.content}</p>
         </div>
         <div className="animated-component">
-          <Image
-            src="/hero-art-1.png"
-            alt="hero-art-1"
-            quality={100}
-            width={797}
-            height={481}
-            style={{position: "relative", zIndex: 999}}
-          />
+          <div className={styles.heroArtContainer}>
+            <Image
+              src="/hero-art-1.png"
+              alt="hero-art-1"
+              quality={100}
+              fill={true}
+              style={{zIndex: 999}}
+            />
+          </div>
         </div>
       </div>
       <ImageComponent

@@ -22,3 +22,24 @@
 .heroMessage p {
     font-size: 24px;
 }
+
+.heroArtContainer {
+    position: relative;
+    width: 797px;
+    height: 481px;
+}
+
+@media only screen and (max-width: 1440px) {
+    .heroMessage b {
+        font-size: 52px;
+    }
+
+    .heroMessage p {
+        font-size: 18px;
+    }
+
+    .heroArtContainer {
+        width: 647px;
+        height: 390px;
+    }
+}

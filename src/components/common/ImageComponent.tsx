@@ -1,6 +1,7 @@
 import Image from "next/image";
-import {FC} from "react";
+import {CSSProperties, FC} from "react";
 import {EffectNumber, Parallax} from "react-scroll-parallax";
+import ImageParallax from "./ImageParallax";
 
 interface IImageComponent {
   src: string;
@@ -9,12 +10,13 @@ interface IImageComponent {
   right?: string;
   rotate?: string;
   opacity?: EffectNumber;
-  width: number;
-  height: number;
-  flipHorz?: boolean;
+  width?: number;
+  height?: number;
   isGlass?: boolean;
   parallaxSpeed?: number;
   zIndexOverride?: number;
+  fill?: boolean;
+  className?: string;
 }
 
 const ImageComponent: FC<IImageComponent> = ({
@@ -26,45 +28,72 @@ const ImageComponent: FC<IImageComponent> = ({
   opacity,
   width,
   height,
-  flipHorz,
   isGlass,
   parallaxSpeed,
   zIndexOverride,
+  fill,
+  className,
 }) => {
-  const getOpacityValues = (): EffectNumber => {
-    if (!opacity) return [1, 1];
-    return opacity;
+  const imgProps = () => {
+    if (fill) return {fill: true};
+    return {
+      position: "relative",
+      width,
+      height,
+    };
   };
+
+  if (fill)
+    return (
+      <ImageParallax
+        top={top}
+        left={left}
+        right={right}
+        rotate={rotate}
+        opacity={opacity}
+        zIndexOverride={zIndexOverride}
+        parallaxSpeed={parallaxSpeed || 0}
+      >
+        <div className={className} style={{position: "relative"}}>
+          <Image
+            src={src}
+            alt={src}
+            quality={100}
+            style={{
+              filter: isGlass ? "blur(5px)" : "",
+              clipPath: isGlass ? "circle(50% at center)" : "",
+              padding: isGlass ? "15px" : "",
+              zIndex: 1,
+            }}
+            {...imgProps()}
+          />
+        </div>
+      </ImageParallax>
+    );
+
   return (
-    <Parallax
-      speed={parallaxSpeed || 0}
-      opacity={getOpacityValues()}
-      rotateY={[flipHorz ? 360 : 0, flipHorz ? 360 : 0]}
-      style={{
-        position: "absolute",
-        left: left || "",
-        top: top || "",
-        right: right || "",
-        rotate: rotate || "0deg",
-        overflow: "hidden",
-        zIndex: zIndexOverride || 1,
-      }}
+    <ImageParallax
+      top={top}
+      left={left}
+      right={right}
+      rotate={rotate}
+      opacity={opacity}
+      zIndexOverride={zIndexOverride}
+      parallaxSpeed={parallaxSpeed || 0}
     >
       <Image
         src={src}
         alt={src}
         quality={100}
-        width={width}
-        height={height}
         style={{
-          position: "relative",
           filter: isGlass ? "blur(5px)" : "",
           clipPath: isGlass ? "circle(50% at center)" : "",
           padding: isGlass ? "15px" : "",
           zIndex: 1,
         }}
+        {...imgProps()}
       />
-    </Parallax>
+    </ImageParallax>
   );
 };
 

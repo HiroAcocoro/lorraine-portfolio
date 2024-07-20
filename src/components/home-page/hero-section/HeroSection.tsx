@@ -14,14 +14,15 @@ const HeroSection = () => {
           <p>{landingPage.hero.content}</p>
         </div>
         <div className="animated-component">
-          <Image
-            src="/hero-art-1.png"
-            alt="hero-art-1"
-            quality={100}
-            width={797}
-            height={481}
-            style={{position: "relative", zIndex: 999}}
-          />
+          <div className={styles.heroArtContainer}>
+            <Image
+              src="/hero-art-1.png"
+              alt="hero-art-1"
+              quality={100}
+              fill={true}
+              style={{zIndex: 999}}
+            />
+          </div>
         </div>
       </div>
       <ImageComponent
@@ -30,26 +31,26 @@ const HeroSection = () => {
         height={722}
         top="30%"
         left="-400px"
+        opacity={[0.3, 0.2]}
         parallaxSpeed={layer1ParallaxSpeed}
       />
       <ImageComponent
+        fill
         src="/home-art-1.png"
-        width={971}
-        height={722}
         left="20%"
         top="-440px"
-        rotate="204deg"
+        rotate="176deg"
         opacity={[0.4, 0.2]}
-        parallaxSpeed={layer1ParallaxSpeed}
+        className={styles.artContainerLg1}
       />
       <ImageComponent
+        fill
         src="/home-art-2.png"
-        width={747}
-        height={629}
         top="20%"
         right="0%"
-        opacity={[0.4, 0.2]}
+        opacity={[0.3, 0.2]}
         parallaxSpeed={layer1ParallaxSpeed}
+        className={styles.artContainerLg2}
       />
       <div>
         <ImageComponent
@@ -62,70 +63,69 @@ const HeroSection = () => {
           parallaxSpeed={layer2ParallaxSpeed}
         />
         <ImageComponent
+          fill
           src="/home-art-4.svg"
-          width={363}
-          height={258}
           top="69%"
           left="-20px"
+          className={styles.artContainer7}
         />
         <ImageComponent
+          fill
           src="/home-art-3.png"
-          width={38}
-          height={38}
           top="82%"
           left="250px"
+          className={styles.artContainer8}
         />
       </div>
       <ImageComponent
+        fill
         src="/home-art-5.png"
-        width={49}
-        height={49}
         top="18%"
         left="160px"
+        className={styles.artContainer6}
       />
       <ImageComponent
+        fill
         src="/home-art-3.png"
-        width={165}
-        height={165}
         top="1%"
         left="18%"
         isGlass
         parallaxSpeed={layer2ParallaxSpeed}
+        className={styles.artContainer5}
       />
       <ImageComponent
+        fill
         src="/home-art-5.png"
-        width={135}
-        height={135}
         top="13%"
         left="40%"
         isGlass
         parallaxSpeed={layer2ParallaxSpeed}
+        className={styles.artContainer4}
       />
       <div>
         <ImageComponent
+          fill
           src="/home-art-5.png"
-          width={120}
-          height={120}
-          rotate="310deg"
           top="3%"
-          right="290px"
+          right="330px"
           isGlass
           parallaxSpeed={layer2ParallaxSpeed}
+          className={styles.artContainer3}
         />
         <ImageComponent
+          fill
           src="/home-art-4.svg"
-          width={201}
-          height={158}
           rotate="310deg"
           top="170px"
           right="200px"
+          className={styles.artContainer2}
         />
         <ImageComponent
+          fill
           src="/home-art-3.png"
-          width={211}
-          height={205}
           top="10%"
           right="140px"
+          className={styles.artContainer1}
         />
       </div>
       <ImageComponent

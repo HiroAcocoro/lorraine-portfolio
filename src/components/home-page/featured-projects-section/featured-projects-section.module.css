@@ -24,10 +24,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .projectContainer {
-    z-index: 99;
+    z-index: 299;
     margin-top: 30%;
 }
 
@@ -263,7 +264,6 @@
 }
 
 .projectInfo {
-    width: 50%;
     height: 100%;
     margin: 32px 0;
 }
@@ -275,7 +275,7 @@
 }
 
 .projectCardHeader p {
-    font-size: 24px;
+    font-size: 36px;
     font-weight: 700;
     text-transform: capitalize;
     text-align: center;
@@ -290,17 +290,123 @@
 }
 
 .projectCardBody p {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 300;
     text-align: justify;
+    margin-bottom: 34px;
 }
 
 .projectCardImgContainer {
-    height: 100%;
     width: 50%;
     border-radius: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 64px;
+}
+
+.featuredProjectImg1 {
+    width: 489px;
+    height: 422px;
+}
+
+.featuredProjectImg2 {
+    width: 490px;
+    height: 383px;
+}
+
+.featuredProjectImg3 {
+    width: 489px;
+    height: 422px;
+}
+
+.artContainer1 {
+    width: 326px;
+    height: 258px;
+}
+
+.artContainer2 {
+    width: 125px;
+    height: 124px;
+}
+
+.artContainer3 {
+    width: 141px;
+    height: 108px;
+}
+
+@media only screen and (max-width: 1600px) {
+    .projectContainer {
+        max-width: 1179px;
+    }
+
+    .projectCardHeader p {
+        font-size: 27px;
+    }
+
+    .projectCardBody p {
+        font-size: 20px;
+    }
+
+    .artContainer1 {
+        margin-top: 180px;
+        width: 297px;
+        height: 186px;
+    }
+
+    .artContainer2 {
+        margin-top: 180px;
+        width: 78px;
+        height: 78px;
+    }
+
+    .artContainer3 {
+        margin-top: -180px;
+        margin-right: -180px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .projectContainer {
+        max-width: 988px;
+    }
+
+    .projectCardBody p {
+        line-height: 24px;
+    }
+
+    .projectInfo {
+        margin: 0 0 32px 10px;
+    }
+
+    .projectCardImgContainer {
+        width: 40%;
+    }
+
+    .projectCardImgContainer {
+        padding: 44px;
+    }
+
+    .featuredProjectImg1 {
+        width: 435px;
+        height: 375px;
+    }
+
+    .featuredProjectImg2 {
+        width: 468px;
+        height: 366px;
+    }
+
+    .featuredProjectImg3 {
+        width: 435px;
+        height: 375px;
+    }
+
+    .artContainer1 {
+        margin-top: -120px;
+    }
+
+    .artContainer2 {
+        margin-top: -120px;
+    }
 }

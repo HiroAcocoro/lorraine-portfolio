@@ -12,6 +12,7 @@ interface IProjectCard {
       logoH: number;
     };
     imgSrc: string;
+    className: string;
     content: string;
     link: string;
     gradientBgColor: string;
@@ -157,13 +158,17 @@ const ProjectCard: FC<IProjectCard> = ({content, artAsset}) => {
           className={styles.projectCardImgContainer}
           style={{background: content.gradientBgColor}}
         >
-          <Image
-            src={content.imgSrc}
-            width={489}
-            height={422}
-            alt={content.title}
-            quality={100}
-          />
+          <div
+            className={styles[content.className]}
+            style={{position: "relative"}}
+          >
+            <Image
+              fill
+              src={content.imgSrc}
+              alt={content.title}
+              quality={100}
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@
 }
 
 .footerTitle p {
-    font-size: 32px;
+    font-size: 48px;
     font-weight: 900;
 }
 
@@ -15,8 +15,29 @@
 }
 
 .socialsContainer {
-    max-width: 465px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.socialsLogo {
+    position: relative;
+    width: 142px;
+    height: 145px;
+}
+
+@media only screen and (max-width: 1440px) {
+    .footerTitle p {
+        font-size: 32px;
+    }
+
+    .socialsLogo {
+        width: 102px;
+        height: 105px;
+    }
+
+    .socialsWrapper {
+        margin-top: -25px;
+    }
+
 }

@@ -10,34 +10,33 @@ const FooterSection = () => {
       </div>
       <div className={styles.socialsWrapper}>
         <div className={styles.socialsContainer}>
-          <Image
-            src="/social-facebook.png"
-            alt="facebook"
-            width={93}
-            height={95}
-            quality={100}
-          />
-          <Image
-            src="/social-instagram.png"
-            alt="instagram"
-            width={93}
-            height={95}
-            quality={100}
-          />
-          <Image
-            src="/social-twitter.png"
-            alt="twitter"
-            width={93}
-            height={95}
-            quality={100}
-          />
-          <Image
-            src="/social-linkedin.png"
-            alt="linkedin"
-            width={93}
-            height={95}
-            quality={100}
-          />
+          <div className={styles.socialsLogo}>
+            <Image
+              src="/social-facebook.png"
+              alt="facebook"
+              fill
+              quality={100}
+            />
+          </div>
+          <div className={styles.socialsLogo}>
+            <Image
+              src="/social-instagram.png"
+              alt="instagram"
+              fill
+              quality={100}
+            />
+          </div>
+          <div className={styles.socialsLogo}>
+            <Image src="/social-twitter.png" alt="twitter" fill quality={100} />
+          </div>
+          <div className={styles.socialsLogo}>
+            <Image
+              src="/social-linkedin.png"
+              alt="linkedin"
+              fill
+              quality={100}
+            />
+          </div>
         </div>
       </div>
     </div>

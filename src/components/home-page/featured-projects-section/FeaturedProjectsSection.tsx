@@ -142,13 +142,12 @@ const FeatureProjectsSection = () => {
 
       <div id="project-3">
         <ImageComponent
+          fill
           src="/home-art-4.svg"
-          width={141}
-          height={108}
-          top="295vh"
+          top="300vh"
           right="40%"
-          flipHorz
           rotate="300deg"
+          className={styles.artContainer3}
         />
         <ImageComponent
           src="/home-art-3.png"
@@ -195,18 +194,18 @@ const FeatureProjectsSection = () => {
           parallaxSpeed={layer1ParallaxSpeed}
         />
         <ImageComponent
+          fill
           src="/home-art-4.svg"
-          width={326}
-          height={258}
           top="335vh"
           right="0%"
+          className={styles.artContainer1}
         />
         <ImageComponent
+          fill
           src="/home-art-3.png"
-          width={124}
-          height={124}
           top="338vh"
           right="0%"
+          className={styles.artContainer2}
         />
         <ImageComponent
           src="/home-art-7.png"

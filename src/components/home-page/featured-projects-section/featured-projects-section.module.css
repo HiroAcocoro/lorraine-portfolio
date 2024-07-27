@@ -467,3 +467,57 @@
         font-size: 16px;
     }
 }
+
+@media only screen and (max-width: 1144px) {
+    .projectContainer {
+        max-width: 526px;
+    }
+
+    .projectCard {
+        flex-direction: column-reverse !important;
+    }
+
+    .projectCardImgContainer {
+        width: auto;
+        padding: 57px 70px;
+    }
+
+    .featuredProjectImg1 {
+        width: 346px;
+        height: 299px;
+    }
+
+    .featuredProjectImg2 {
+        width: 376px;
+        height: 294px;
+    }
+
+    .featuredProjectImg3 {
+        width: 401px;
+        height: 346px;
+    }
+
+    .featuredProjLogo1 {
+        width: 140px;
+        height: 140px;
+    }
+
+    .featuredProjLogo2 {
+        width: 305px;
+        height: 44px;
+        margin-top: 32px;
+    }
+
+    .featuredProjLogo3 {
+        width: 140px;
+        height: 140px;
+    }
+
+    .projectCardBody {
+        padding: 0 15px;
+    }
+
+    .projectCardBody p {
+        padding: 0 15px;
+    }
+}

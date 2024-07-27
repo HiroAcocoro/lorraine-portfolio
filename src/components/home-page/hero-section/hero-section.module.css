@@ -182,3 +182,30 @@
         height: 622px;
     }
 }
+
+@media only screen and (max-width: 1144px) {
+    .heroContainer {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .artContainerLg2 {
+        width: 647px;
+        height: 729px;
+        opacity: 0.4;
+    }
+
+    .artContainerLg3 {
+        display: none;
+    }
+
+    .heroArtContainer {
+        width: 797px;
+        height: 481px;
+    }
+
+    .heroMessage {
+        text-align: center;
+        margin-top: 68px;
+    }
+}

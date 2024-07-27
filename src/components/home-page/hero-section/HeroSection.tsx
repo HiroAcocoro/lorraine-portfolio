@@ -26,13 +26,13 @@ const HeroSection = () => {
         </div>
       </div>
       <ImageComponent
+        fill
         src="/home-art-1.png"
-        width={971}
-        height={722}
-        top="30%"
+        top="25%"
         left="-400px"
         opacity={[0.3, 0.2]}
         parallaxSpeed={layer1ParallaxSpeed}
+        className={styles.artContainerLg3}
       />
       <ImageComponent
         fill

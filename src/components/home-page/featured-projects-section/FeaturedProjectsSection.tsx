@@ -208,12 +208,12 @@ const FeatureProjectsSection = () => {
           className={styles.artContainer2}
         />
         <ImageComponent
+          fill
           src="/home-art-7.png"
-          width={938}
-          height={890}
           top="338vh"
           left="-430px"
           parallaxSpeed={layer1ParallaxSpeed}
+          className={styles.featuredProjectImgLg1}
         />
       </div>
     </div>

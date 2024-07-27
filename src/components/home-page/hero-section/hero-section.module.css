@@ -33,6 +33,11 @@
     height: 629px;
 }
 
+.artContainerLg3 {
+    width: 971px;
+    height: 722px;
+}
+
 .artContainer1 {
     width: 211px;
     height: 205px;
@@ -148,5 +153,32 @@
     .heroArtContainer {
         width: 647px;
         height: 390px;
+    }
+}
+
+@media only screen and (max-width: 1320px) {
+    .heroMessage b {
+        font-size: 40px;
+    }
+
+    .heroMessage p {
+        font-size: 16px;
+    }
+
+    .heroArtContainer {
+        width: 597px;
+        height: 340px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .artContainerLg2 {
+        width: 527px;
+        height: 509px;
+    }
+
+    .artContainerLg3 {
+        width: 971px;
+        height: 622px;
     }
 }

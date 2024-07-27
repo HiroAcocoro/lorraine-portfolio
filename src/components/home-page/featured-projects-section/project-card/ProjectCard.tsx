@@ -8,8 +8,7 @@ interface IProjectCard {
     title: string;
     logo: {
       logoSrc: string;
-      logoW: number;
-      logoH: number;
+      logoClassName: string;
     };
     imgSrc: string;
     className: string;
@@ -135,13 +134,17 @@ const ProjectCard: FC<IProjectCard> = ({content, artAsset}) => {
       >
         <div className={styles.projectInfo}>
           <div className={styles.projectCardHeader}>
-            <Image
-              src={content.logo.logoSrc}
-              width={content.logo.logoW}
-              height={content.logo.logoH}
-              alt={content.title}
-              quality={100}
-            />
+            <div
+              className={styles[content.logo.logoClassName]}
+              style={{position: "relative"}}
+            >
+              <Image
+                fill
+                src={content.logo.logoSrc}
+                alt={content.title}
+                quality={100}
+              />
+            </div>
             <p>{content.title}</p>
           </div>
           <div className={styles.projectCardBody}>

@@ -3,8 +3,7 @@ export default [
     title: "MMA lawyer website",
     logo: {
       logoSrc: "/mma-logo.png",
-      logoW: 128,
-      logoH: 128,
+      logoClassName: "featuredProjLogo1",
     },
     imgSrc: "/mma-art-3.png",
     className: "featuredProjectImg1",
@@ -29,8 +28,7 @@ export default [
     title: "The World’s Best Selling Tool For The Home Service Industry",
     logo: {
       logoSrc: "/rb-logo.png",
-      logoW: 356,
-      logoH: 50,
+      logoClassName: "featuredProjLogo2",
     },
     imgSrc: "/rb-art-1.png",
     className: "featuredProjectImg2",
@@ -55,8 +53,7 @@ export default [
     title: "MMA lawyer website",
     logo: {
       logoSrc: "/mma-logo.png",
-      logoW: 128,
-      logoH: 128,
+      logoClassName: "featuredProjLogo3",
     },
     imgSrc: "/mma-art-3.png",
     className: "featuredProjectImg3",

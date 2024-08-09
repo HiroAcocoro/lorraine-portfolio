@@ -4,6 +4,7 @@ import {useState, useEffect} from "react";
 import styles from "./navbar.module.css";
 import Link from "next/link";
 import Logo from "./logo";
+import Image from "next/image";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState<boolean>(false);
@@ -72,6 +73,14 @@ const Navbar = () => {
           <Link href="/">contact</Link>
           <Link href="/">resume</Link>
         </div>
+        <Image
+          src="/hamburger.svg"
+          className={styles.navbarHamburgerMenu}
+          width={30}
+          height={20}
+          alt="hamburger-menu"
+          quality={100}
+        />
       </div>
     </header>
   );

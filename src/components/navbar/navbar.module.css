@@ -43,3 +43,22 @@
 .screenScrolled a {
     color: #E787B0;
 }
+
+.navbarHamburgerMenu {
+    display: none;
+}
+
+@media only screen and (max-width: 834px) {
+    .main {
+        height: 107px;
+        width: 100vw;
+    }
+
+    .navbarLinks {
+        display: none;
+    }
+
+    .navbarHamburgerMenu {
+        display: block;
+    }
+}

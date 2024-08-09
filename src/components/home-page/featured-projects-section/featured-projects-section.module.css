@@ -37,6 +37,21 @@
     z-index: 20;
 }
 
+.featured-proj-wrapper-1 {
+    width: 198px;
+    height: 229px;
+}
+
+.featured-proj-wrapper-2 {
+    width: 209px;
+    height: 152px;
+}
+
+.featured-proj-wrapper-3 {
+    width: 300px;
+    height: 278px;
+}
+
 .projectCardImgArtContainer.hidden {
     opacity: 0;
 }
@@ -526,4 +541,20 @@
     .projectContainer {
         max-width: 322px;
     }
+
+    .featured-proj-wrapper-1 {
+        width: 148px;
+        height: 179px;
+    }
+
+    .featured-proj-wrapper-2 {
+        width: 159px;
+        height: 102px;
+    }
+
+    .featured-proj-wrapper-3 {
+        width: 250px;
+        height: 228px;
+    }
+
 }

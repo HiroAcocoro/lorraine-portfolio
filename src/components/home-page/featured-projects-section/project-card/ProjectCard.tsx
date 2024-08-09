@@ -20,8 +20,7 @@ interface IProjectCard {
   };
   artAsset: {
     src: string;
-    w: number;
-    h: number;
+    className: string;
     alt: string;
     top: string;
     left: string;
@@ -84,47 +83,56 @@ const ProjectCard: FC<IProjectCard> = ({content, artAsset}) => {
         className={`${styles.projectCardImgArtContainer} ${
           inView ? styles[artAsset.animation] : styles.hidden
         }`}
+        style={{
+          display: "flex",
+          justifyContent: content.isReversed ? "flex-end" : "",
+        }}
       >
-        <Image
-          src={artAsset.src}
-          width={artAsset.w}
-          height={artAsset.h}
-          quality={100}
-          alt={artAsset.alt}
-          priority
-          style={{
-            position: "absolute",
-            top: artAsset.top,
-            left: content.isReversed ? "" : artAsset.left,
-            right: content.isReversed ? artAsset.left : "",
-            zIndex: 20,
-            visibility:
-              artAsset.isGlitched && glitchedImgSrc !== 0
-                ? "hidden"
-                : "visible",
-          }}
-        />
-        {artAsset.isGlitched &&
-          artAsset.glitchedImages?.length &&
-          artAsset.glitchedImages.map((src, index) => (
-            <Image
-              key={src}
-              src={src}
-              width={artAsset.w}
-              height={artAsset.h}
-              quality={100}
-              alt={artAsset.alt}
-              priority
-              style={{
-                position: "absolute",
-                top: artAsset.top,
-                left: content.isReversed ? "" : artAsset.left,
-                right: content.isReversed ? artAsset.left : "",
-                zIndex: 20,
-                visibility: glitchedImgSrc === index + 1 ? "visible" : "hidden",
-              }}
-            />
-          ))}
+        <div
+          className={styles[artAsset.className]}
+          style={{position: "relative"}}
+        >
+          <Image
+            src={artAsset.src}
+            fill
+            quality={100}
+            alt={artAsset.alt}
+            priority
+            style={{
+              position: "absolute",
+              top: artAsset.top,
+              left: content.isReversed ? "" : artAsset.left,
+              right: content.isReversed ? artAsset.left : "",
+              zIndex: 20,
+              visibility:
+                artAsset.isGlitched && glitchedImgSrc !== 0
+                  ? "hidden"
+                  : "visible",
+            }}
+          />
+
+          {artAsset.isGlitched &&
+            artAsset.glitchedImages?.length &&
+            artAsset.glitchedImages.map((src, index) => (
+              <Image
+                src={src}
+                key={src}
+                fill
+                quality={100}
+                alt={artAsset.alt}
+                priority
+                style={{
+                  position: "absolute",
+                  top: artAsset.top,
+                  left: content.isReversed ? "" : artAsset.left,
+                  right: content.isReversed ? artAsset.left : "",
+                  zIndex: 20,
+                  visibility:
+                    glitchedImgSrc === index + 1 ? "visible" : "hidden",
+                }}
+              />
+            ))}
+        </div>
       </div>
 
       <div

@@ -209,3 +209,38 @@
         margin-top: 68px;
     }
 }
+
+@media only screen and (max-width: 834px) {
+    .heroArtContainer {
+        width: 371px;
+        height: 239px;
+    }
+
+    .heroMessage b {
+        font-size: 24px;
+    }
+
+    .heroMessage p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .artContainerLg1 {
+        width: 461px;
+        height: 377px;
+        rotate: 11deg;
+        margin-left: -200px;
+        margin-right: -200px;
+    }
+
+    .artContainer3 {
+        width: 65px;
+        height: 65px;
+    }
+
+    .artContainer5 {
+        width: 71px;
+        height: 71px;
+        margin-top: -5vh;
+    }
+}

@@ -62,3 +62,13 @@
         display: block;
     }
 }
+
+.dropdownBtn {
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    background: none;
+    border: none;
+}

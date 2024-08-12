@@ -3,16 +3,23 @@ import featuredProjects from "@/constants/featured-projects";
 import ProjectCard from "./project-card/ProjectCard";
 import AnimatedTextComponent from "@/components/common/animated-text/AnimatedTextComponent";
 import ImageComponent from "@/components/common/ImageComponent";
+import {RefObject} from "react";
 
-const FeatureProjectsSection = () => {
+interface FeatureProjectsSectionProps {
+  projectsRef: RefObject<HTMLDivElement>;
+}
+
+const FeatureProjectsSection = ({projectsRef}: FeatureProjectsSectionProps) => {
   const layer1ParallaxSpeed = -22;
   const layer2ParallaxSpeed = -10;
   const layer3ParallaxSpeed = -8;
 
   return (
     <div className={styles.sectionContainer}>
-      <div className={styles.sectionTitle}>
-        <AnimatedTextComponent text="Featured Projects" />
+      <div className={styles.sectionTitle} ref={projectsRef}>
+        <div style={{paddingTop: "15px"}}>
+          <AnimatedTextComponent text="Featured Projects" />
+        </div>
       </div>
 
       <div className={styles.featuredProjectsContainer}>

@@ -6,7 +6,11 @@ import Link from "next/link";
 import Logo from "./logo";
 import Image from "next/image";
 
-const Navbar = () => {
+interface NavbarProps {
+  scrollTo: () => void;
+}
+
+const Navbar = ({scrollTo}: NavbarProps) => {
   const [scrolled, setScrolled] = useState<boolean>(false);
   const [screenScrolled, setScreenScrolled] = useState<boolean>(false);
   const [windowDimensions, setWindowDimensions] = useState({
@@ -69,7 +73,9 @@ const Navbar = () => {
           }`}
         >
           <Link href="/">home</Link>
-          <Link href="/">projects</Link>
+          <div className={styles.dropdownBtn} onClick={scrollTo}>
+            projects
+          </div>
           <Link href="/">contact</Link>
           <Link href="/">resume</Link>
         </div>

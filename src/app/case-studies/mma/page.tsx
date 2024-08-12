@@ -1,7 +1,8 @@
 import styles from "./page.module.css";
+import baseStyles from "../case-studies.module.css";
 import Image from "next/image";
 import {EB_Garamond, Montserrat} from "next/font/google";
-import caseStudies from "@/constants/case-studies";
+import caseStudy from "@/constants/mma-case-studies";
 import Section from "@/components/case-studies/Section";
 
 const eb_garamond = EB_Garamond({
@@ -16,8 +17,8 @@ const montserrat = Montserrat({
 
 const mmaCaseStudy = () => {
   return (
-    <div className={styles.main}>
-      <div className={styles.heroBg}>
+    <div className={baseStyles.main}>
+      <div className={baseStyles.heroBg}>
         <Image
           src="/mma-bg-1.png"
           alt="background-image"
@@ -26,9 +27,9 @@ const mmaCaseStudy = () => {
           quality={100}
         />
       </div>
-      <div className={styles.heroSection}>
-        <div className={styles.heroCard}>
-          <div className={styles.cardHeader}>
+      <div className={baseStyles.heroSection}>
+        <div className={baseStyles.heroCard}>
+          <div className={baseStyles.cardHeader}>
             <Image
               src="/mma-logo.png"
               width={124}
@@ -37,7 +38,7 @@ const mmaCaseStudy = () => {
             />
             <p>lawyer website</p>
           </div>
-          <div className={styles.cardBody}>
+          <div className={baseStyles.cardBody}>
             <p>
               A website that provide potential clients with information about
               the lawyer&apos;s services and to facilitate easy contact. It
@@ -57,9 +58,9 @@ const mmaCaseStudy = () => {
           />
         </div>
       </div>
-      <div className={styles.caseStudyContainer}>
-        <div className={styles.caseStudyMain}>
-          <div className={styles.section}>
+      <div className={baseStyles.caseStudyContainer}>
+        <div className={baseStyles.caseStudyMain}>
+          <div className={baseStyles.section}>
             <h3>About this project</h3>
             <p>
               The aim of this project is to create a simple, informative , and
@@ -68,11 +69,11 @@ const mmaCaseStudy = () => {
               presence of his law office.
             </p>
           </div>
-          <Section content={caseStudies.n1} />
-          <Section content={caseStudies.n2} />
-          <Section content={caseStudies.n3} />
-          <Section content={caseStudies.n4} />
-          <div className={styles.section} style={{marginTop: "100px"}}>
+          <Section content={caseStudy.n1} />
+          <Section content={caseStudy.n2} />
+          <Section content={caseStudy.n3} />
+          <Section content={caseStudy.n4} />
+          <div style={{marginTop: "100px"}}>
             {/* @TODO extract to component */}
             <div className={styles.caseStudyCard}>
               <div className={styles.caseStudyCardHeader}>
@@ -129,9 +130,9 @@ const mmaCaseStudy = () => {
               </div>
             </div>
           </div>
-          <Section content={caseStudies.n5} />
-          <Section content={caseStudies.n6} />
-          <Section content={caseStudies.n7} />
+          <Section content={caseStudy.n5} />
+          <Section content={caseStudy.n6} />
+          <Section content={caseStudy.n7} />
           <div className={styles.pageDesignContainer}>
             <div className={styles.pageDesignTitle}>Landing Page Design</div>
             <div className={styles.pageDesignImg}>
@@ -145,9 +146,9 @@ const mmaCaseStudy = () => {
               />
             </div>
           </div>
-          <div className={styles.keyContainer}>
-            <div className={styles.keyTitle}>Key Takeaway</div>
-            <div className={styles.keyContent}>
+          <div className={baseStyles.keyContainer}>
+            <div className={baseStyles.keyTitle}>Key Takeaway</div>
+            <div className={baseStyles.keyContent}>
               This project highlights my ability to manage and execute a design
               project independently, from initial consultation to launch.
               Despite the simplicity of the project, I demonstrated creativity,

@@ -33,7 +33,7 @@ export default [
     className: "featuredProjectImg2",
     content:
       "A software tool designed to help service-based businesses manage and automate their bidding and sales processes. It provides a range of features aimed at streamlining the workflow from initial customer contact to closing a sale.",
-    link: "/case-studies/mma",
+    link: "/case-studies/responsibid",
     gradientBgColor: "linear-gradient(to bottom, #0094FF 0%, #002BC5 100%)",
     boxShadow: "rgb(42 44 203 / 65%) 0px 5px 10px",
     isReversed: true,

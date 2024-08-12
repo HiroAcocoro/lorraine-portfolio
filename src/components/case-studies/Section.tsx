@@ -2,7 +2,7 @@ import {FC} from "react";
 import styles from "./section.module.css";
 
 type TContent = {
-  b: string;
+  b?: string;
   content: string;
 };
 
@@ -25,7 +25,7 @@ const Section: FC<{content: ISectionContent}> = ({content}) => {
           {group.subTitle && <h4>{group.subTitle}</h4>}
           <ul>
             {group.contents.map((message, index) => (
-              <li key={index}>
+              <li key={index} style={{listStyleType: message?.b || "none"}}>
                 <b>{message.b}</b>
                 {message.content}
               </li>

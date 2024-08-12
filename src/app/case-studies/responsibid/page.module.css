@@ -1,0 +1,48 @@
+.imgArtWrapper1 {
+    width: 1142px;
+    height: 1971px;
+    position: relative;
+    margin: 100px 0;
+}
+
+.sectionSubHeader {
+    margin-top: 100px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.carousel {
+    margin: 100px 0;
+    max-width: 1442px;
+    --slide-height: 824px;
+    --slide-spacing: 1rem;
+    --slide-size: 1142px;
+}
+
+.carouselViewport {
+    overflow: hidden;
+}
+
+.carouselContainer {
+    display: flex;
+    touch-action: pan-y pinch-zoom;
+    margin-left: calc(var(--slide-spacing) * -1);
+}
+
+.carouselSlide {
+    transform: translate3d(0, 0, 0);
+    flex: 0 0 var(--slide-size);
+    min-width: 0;
+    padding-left: var(--slide-spacing);
+}
+
+.imgArtWrapper2 {
+    width: 1142px;
+    height: 824px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--slide-height);
+    user-select: none;
+}

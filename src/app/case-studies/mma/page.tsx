@@ -1,19 +1,8 @@
 import styles from "./page.module.css";
 import baseStyles from "../case-studies.module.css";
 import Image from "next/image";
-import {EB_Garamond, Montserrat} from "next/font/google";
 import caseStudy from "@/constants/mma-case-studies";
 import Section from "@/components/case-studies/Section";
-
-const eb_garamond = EB_Garamond({
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  display: "swap",
-});
 
 const mmaCaseStudy = () => {
   return (

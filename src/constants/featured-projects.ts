@@ -48,17 +48,18 @@ export default [
     },
   },
   {
-    title: "MMA lawyer website",
+    title: "PREPFOLIO",
     logo: {
-      logoSrc: "/mma-logo.png",
+      logoSrc: "/prepfolio-logo.png",
       logoClassName: "featuredProjLogo3",
     },
-    imgSrc: "/mma-art-3.png",
+    imgSrc: "/prepfolio-art-1.png",
     className: "featuredProjectImg3",
     content:
-      "A website that provide potential clients with information about the lawyer's services and to facilitate easy contact. It serves as a professional online presence to attract and inform prospective clients.",
-    link: "/case-studies/mma",
-    gradientBgColor: "linear-gradient(to bottom, #F0FDA4 0%, #DEE20B 100%)",
+      "Prepfolio is a mobile application designed to simplify meal planning and grocery shopping. It auto-generates personalized meal plans based on user preferences, dietary restrictions, and  creates an automated grocery list.",
+    link: "/case-studies/prepfolio",
+    gradientBgColor:
+      "linear-gradient(rgb(229 226 117) 0%, rgb(201 186 45) 100%)",
     boxShadow: "rgb(223 207 60 / 65%) 0px 5px 10px",
     isReversed: false,
     cardImgAsset: {

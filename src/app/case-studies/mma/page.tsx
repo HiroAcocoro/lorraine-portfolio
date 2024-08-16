@@ -74,60 +74,13 @@ const mmaCaseStudy = () => {
           <Section content={caseStudy.n3} />
           <Section content={caseStudy.n4} />
           <div style={{marginTop: "100px"}}>
-            {/* @TODO extract to component */}
-            <div className={styles.caseStudyCard}>
-              <div className={styles.caseStudyCardHeader}>
-                <h3>Typography</h3>
-                <div className={eb_garamond.className}>
-                  <div className={styles.caseStudyTypography}>
-                    <h3>EB GARAMOND FONT FAMILY</h3>
-                    <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-                    <p>abcdefghijklmnopqrstuvwxyz</p>
-                  </div>
-                </div>
-                <div className={montserrat.className}>
-                  <div className={styles.caseStudyTypography}>
-                    <h3>MONTSERRAT FONT FAMILY</h3>
-                    <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-                    <p>abcdefghijklmnopqrstuvwxyz</p>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.colorPaletteContainer}>
-                <div className={styles.colorPaletteInner}>
-                  <div className={styles.colorPaletteTitle}>
-                    <b style={{fontWeight: 600}}>Color</b>
-                    <br />
-                    Palette
-                  </div>
-                  <div className={styles.colorsContainer}>
-                    <span
-                      className={styles.color}
-                      style={{backgroundColor: "#EAC15A"}}
-                    >
-                      #EAC15A
-                    </span>
-                    <span
-                      className={styles.color}
-                      style={{backgroundColor: "#2C2F3A"}}
-                    >
-                      #2C2F3A
-                    </span>
-                    <span
-                      className={styles.color}
-                      style={{backgroundColor: "#16181D"}}
-                    >
-                      #16181D
-                    </span>
-                    <span
-                      className={styles.color}
-                      style={{backgroundColor: "#696969"}}
-                    >
-                      #696969
-                    </span>
-                  </div>
-                </div>
-              </div>
+            <div className={styles.paletteImgWrapper}>
+              <Image
+                src="/mma-palette-1.png"
+                alt="mma-color-palette"
+                quality={100}
+                fill
+              />
             </div>
           </div>
           <Section content={caseStudy.n5} />
@@ -149,11 +102,15 @@ const mmaCaseStudy = () => {
           <div className={baseStyles.keyContainer}>
             <div className={baseStyles.keyTitle}>Key Takeaway</div>
             <div className={baseStyles.keyContent}>
-              This project highlights my ability to manage and execute a design
-              project independently, from initial consultation to launch.
-              Despite the simplicity of the project, I demonstrated creativity,
-              adaptability, and a user-centered approach to deliver an effective
-              landing page.
+              This project highlights my ability to independently manage and
+              execute a design project from start to finish. Despite the lack of
+              direction from the client, I was able to effectively utilized my
+              research skills, creativity, and design expertise to deliver a
+              high-quality landing page. <br /> <br />
+              My proactive approach and ability to work autonomously ensured the
+              successful completion of the project, demonstrating my value as a
+              UI designer who can deliver results even in the absence of
+              detailed client direction.
             </div>
           </div>
         </div>

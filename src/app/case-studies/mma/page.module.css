@@ -1,74 +1,7 @@
-.caseStudyCard {
-    color: white;
-    border-radius: 19px;
-    background-image: linear-gradient(#EAABCA, #E788B0);
-    padding: 57px 34px;
-}
-
-.caseStudyCard h3 {
-    font-weight: 900;
-    font-size: 20px;
-}
-
-.caseStudyCardHeader {
-    display: grid;
-    grid: auto / 20% 40% 40%;
-    text-align: start;
-}
-
-.caseStudyTypography h3 {
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.caseStudyTypography p {
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 5px;
-    line-height: 10px;
-}
-
-.colorPaletteContainer {
-    border-radius: 16px;
-    border: 20px solid #EBA6C5;
-    background-color: #EBA6C5;
-    margin: 45px 100px;
-    justify-content: space-between;
-}
-
-.colorPaletteInner {
-    border-radius: 16px;
-    border: 1px solid white;
-    background-color: white;
-    padding: 30px 65px;
-    display: flex;
-    align-items: center;
-}
-
-.colorPaletteTitle {
-    color: black;
-    font-size: 32px;
-    font-weight: 300;
-    line-height: 37px;
-    margin-right: 32px;
-}
-
-.colorsContainer {
-    display: flex;
-}
-
-.color {
-    border-radius: 50%;
-    border: 10px solid #EDEDED;
-    height: 110px;
-    width: 110px;
-    color: white;
-    font-size: 15px;
-    font-weight: 300;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0px 5px;
+.paletteImgWrapper {
+    position: relative;
+    width: 1620px;
+    height: 549px;
 }
 
 .pageDesignContainer {
@@ -82,6 +15,8 @@
 
 .pageDesignImg {
     margin-top: 100px;
+    display: flex;
+    justify-content: center;
 }
 
 .pageDesignImg img {

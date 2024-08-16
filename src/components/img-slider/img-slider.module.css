@@ -1,0 +1,53 @@
+.mainContainer {
+    border-radius: 19px;
+    background-color: #f5f6f8;
+    overflow: hidden;
+    height: 824px;
+    margin: 100px 0;
+}
+
+.imgWrapper {
+    position: relative;
+    width: 349px;
+    height: 759px;
+    margin-bottom: 10px;
+}
+
+.imgContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.imgCol {
+    display: flex;
+    flex-direction: column;
+    animation: slide infinite linear;
+}
+
+.col1 {
+    animation-duration: 15s;
+}
+
+.col2 {
+    animation-duration: 18s;
+}
+
+.col3 {
+    animation-duration: 16s;
+}
+
+.col4 {
+    animation-duration: 20s;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-33.33%);
+    }
+}

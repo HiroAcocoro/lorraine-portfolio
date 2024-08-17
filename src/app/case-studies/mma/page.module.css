@@ -6,11 +6,13 @@
 
 .pageDesignContainer {
     padding: 100px 0;
+    width: 100%;
 }
 
 .pageDesignTitle {
-    font-weight: 400;
-    font-size: 24px;
+    align-self: flex-start;
+    font-weight: 600;
+    font-size: 32px;
 }
 
 .pageDesignImg {

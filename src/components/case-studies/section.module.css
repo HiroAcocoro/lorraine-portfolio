@@ -1,18 +1,18 @@
 .section {
-    width: 100%;
+    width: 1620px;
 }
 
 .section h3 {
-    width: 100%;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 600;
 }
 
 .section h4 {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
 }
 
 .section li {
+    font-size: 24px;
     margin: 10px 0;
 }

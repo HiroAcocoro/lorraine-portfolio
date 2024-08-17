@@ -3,10 +3,14 @@ import baseStyles from "../case-studies.module.css";
 import Image from "next/image";
 import caseStudy from "@/constants/mma-case-studies";
 import Section from "@/components/case-studies/Section";
+import Navbar from "@/components/navbar/navbar";
 
 const mmaCaseStudy = () => {
   return (
     <div className={baseStyles.main}>
+      <Navbar
+        colorTransition={{primary: "#E787B0", bg: "rgba(248, 197, 212, 0.15)"}}
+      />
       <div className={baseStyles.heroBg}>
         <Image
           src="/mma-bg-1.png"

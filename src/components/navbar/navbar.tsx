@@ -7,16 +7,36 @@ import Logo from "./logo";
 import Image from "next/image";
 
 interface NavbarProps {
-  scrollTo: () => void;
+  scrollTo?: () => void;
+  colorTransition?: {
+    primary: string;
+    bg: string;
+  };
 }
 
-const Navbar = ({scrollTo}: NavbarProps) => {
+const Navbar = ({scrollTo, colorTransition}: NavbarProps) => {
   const [scrolled, setScrolled] = useState<boolean>(false);
   const [screenScrolled, setScreenScrolled] = useState<boolean>(false);
   const [windowDimensions, setWindowDimensions] = useState({
     width: 0,
     height: 0,
   });
+
+  const getColorTransition = (isPrimary?: boolean) => {
+    if (!colorTransition && !isPrimary) {
+      return "rgba(248, 197, 212, 0.15)";
+    }
+    if (!colorTransition) return "#fff";
+    if (isPrimary) return colorTransition.primary;
+    return colorTransition.bg;
+  };
+
+  const getLinkStyle = () => {
+    return {
+      color: screenScrolled ? getColorTransition(true) : "#fff",
+      transition: "color 0.3s ease",
+    };
+  };
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -58,23 +78,35 @@ const Navbar = ({scrollTo}: NavbarProps) => {
   }, [windowDimensions.height]);
 
   return (
-    <header className={`${styles.main} ${scrolled ? styles.scrolled : ""}`}>
+    <header
+      className={styles.main}
+      style={{
+        boxShadow: scrolled ? "0 4px 30px rgba(0, 0, 0, 0.1)" : "unset",
+        background: scrolled ? getColorTransition() : "unset",
+        backdropFilter: scrolled ? "blur(15.2px)" : "unset",
+        WebkitBackdropFilter: scrolled ? "blur(15.2px)" : "unset",
+      }}
+    >
       <div className={styles.navbarContainer}>
         <div
           className={`${styles.logoContainer} ${
             screenScrolled ? styles.screenScrolled : ""
           }`}
         >
-          <Logo overrideColor={screenScrolled ? "white" : "white"} />
+          <Logo
+            overrideColor={screenScrolled ? getColorTransition(true) : "white"}
+          />
         </div>
-        <div
-          className={`${styles.navbarLinks} ${
-            screenScrolled ? styles.screenScrolled : ""
-          }`}
-        >
-          <Link href="/">home</Link>
-          <Link href="/">projects</Link>
-          <Link href="/">resume</Link>
+        <div className={styles.navbarLinks}>
+          <Link href="/" style={getLinkStyle()}>
+            home
+          </Link>
+          <Link href="/" style={getLinkStyle()}>
+            projects
+          </Link>
+          <Link href="/" style={getLinkStyle()}>
+            resume
+          </Link>
         </div>
         <Image
           src="/hamburger.svg"

@@ -38,10 +38,30 @@
     text-decoration: none;
     color: white;
     transition: 0.4s ease-in;
+    display: inline-block;
+    position: relative;
+    /* Add this */
+}
+
+.navbarLinks a:after {
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+}
+
+.navbarLinks a:hover:after {
+    width: 100%;
 }
 
 .screenScrolled a {
-    color: #E787B0;
+    color: #fff;
 }
 
 .navbarHamburgerMenu {

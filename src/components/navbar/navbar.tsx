@@ -65,7 +65,7 @@ const Navbar = ({scrollTo}: NavbarProps) => {
             screenScrolled ? styles.screenScrolled : ""
           }`}
         >
-          <Logo overrideColor={screenScrolled ? "#E787B0" : "white"} />
+          <Logo overrideColor={screenScrolled ? "white" : "white"} />
         </div>
         <div
           className={`${styles.navbarLinks} ${
@@ -73,10 +73,7 @@ const Navbar = ({scrollTo}: NavbarProps) => {
           }`}
         >
           <Link href="/">home</Link>
-          <div className={styles.dropdownBtn} onClick={scrollTo}>
-            projects
-          </div>
-          <Link href="/">contact</Link>
+          <Link href="/">projects</Link>
           <Link href="/">resume</Link>
         </div>
         <Image

@@ -20,7 +20,7 @@
 }
 
 .heroMessage p {
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .artContainerLg1 {
@@ -143,11 +143,11 @@
 
 
     .heroMessage b {
-        font-size: 52px;
+        font-size: 48px;
     }
 
     .heroMessage p {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .heroArtContainer {

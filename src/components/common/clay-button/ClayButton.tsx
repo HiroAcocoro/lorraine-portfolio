@@ -24,7 +24,6 @@ const ClayButton: FC<IClayButtonProps> = ({
         textDecoration: "none",
         color: "#FFFFFF",
         fontWeight: 600,
-        fontSize: "20px",
         boxShadow: boxShadow,
       }}
     >

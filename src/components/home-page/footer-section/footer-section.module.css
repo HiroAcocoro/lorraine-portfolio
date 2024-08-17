@@ -41,3 +41,15 @@
     }
 
 }
+
+
+@media only screen and (max-width: 1280px) {
+    .footerTitle p {
+        font-size: 27px;
+    }
+
+    .socialsLogo {
+        width: 97px;
+        height: 97px;
+    }
+}

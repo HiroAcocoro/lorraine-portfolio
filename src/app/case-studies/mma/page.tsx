@@ -42,13 +42,14 @@ const mmaCaseStudy = () => {
         </div>
         <div id="ultimate-spacer-jutsu" style={{margin: "0px 5%"}} />
         <div className="animated-component">
-          <Image
-            src="/mma-art-2.png"
-            alt="art-mma-devices"
-            width={737}
-            height={572}
-            quality={100}
-          />
+          <div className={styles.imgArtWrapper}>
+            <Image
+              src="/mma-art-2.png"
+              alt="art-mma-devices"
+              quality={100}
+              fill
+            />
+          </div>
         </div>
       </div>
       <div className={baseStyles.caseStudyContainer}>
@@ -66,7 +67,7 @@ const mmaCaseStudy = () => {
           <Section content={caseStudy.n2} />
           <Section content={caseStudy.n3} />
           <Section content={caseStudy.n4} />
-          <div style={{marginTop: "100px"}}>
+          <div style={{margin: "100px 0"}}>
             <div className={styles.paletteImgWrapper}>
               <Image
                 src="/mma-palette-1.png"

@@ -8,11 +8,29 @@
 }
 
 .section h4 {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 600;
 }
 
 .section li {
     font-size: 24px;
     margin: 10px 0;
+}
+
+@media only screen and (max-width: 1720px) {
+    .section {
+        width: 1277px;
+    }
+
+    .section h3 {
+        font-size: 24px;
+    }
+
+    .section h4 {
+        font-size: 24px;
+    }
+
+    .section li {
+        font-size: 20px;
+    }
 }

@@ -3,6 +3,7 @@ body {
 }
 
 .animated-component {
+  position: relative;
   animation-name: animatedComponent;
   animation-duration: 4s;
   animation-iteration-count: infinite;

@@ -24,3 +24,26 @@
 .pageDesignImg img {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+.imgArtWrapper {
+    position: relative;
+    width: 737px;
+    height: 572px;
+}
+
+
+@media only screen and (max-width: 1720px) {
+    .imgArtWrapper {
+        width: 603px;
+        height: 496px;
+    }
+
+    .paletteImgWrapper {
+        width: 1277px;
+        height: 439px;
+    }
+
+    .pageDesignTitle {
+        font-size: 24px;
+    }
+}

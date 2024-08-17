@@ -39,7 +39,7 @@
     backdrop-filter: blur(15.2px);
     -webkit-backdrop-filter: blur(15.2px);
     border: 1px solid rgba(255, 255, 255, 0.5);
-    padding: 57px 59px;
+    padding: 50px;
     color: white;
 }
 
@@ -113,4 +113,38 @@
 .keyContent {
     font-size: 20px;
     margin-top: 20px;
+}
+
+@media only screen and (max-width: 1720px) {
+    .keyContainer {
+        width: 1277px;
+    }
+
+    .cardHeader p {
+        font-size: 27px;
+    }
+
+    .cardBody p {
+        font-size: 20px;
+    }
+
+    .heroCard {
+        width: 30%;
+    }
+
+    .section {
+        width: 1277px;
+    }
+
+    .section h3 {
+        font-size: 24px;
+    }
+
+    .section p {
+        font-size: 20px;
+    }
+
+    .caseStudyMain {
+        padding: 80px 0px;
+    }
 }

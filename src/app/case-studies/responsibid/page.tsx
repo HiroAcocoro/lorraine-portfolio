@@ -39,7 +39,7 @@ const responsibidCaseStudy = () => {
             </p>
           </div>
         </div>
-        <div id="ultimate-spacer-jutsu" style={{margin: "0px 5%"}} />
+        <div className={baseStyles.spacer} />
         <div className="animated-component">
           <Image
             src="/rb-art-1.png"

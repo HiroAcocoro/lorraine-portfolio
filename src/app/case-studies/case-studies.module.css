@@ -115,9 +115,13 @@
     margin-top: 20px;
 }
 
+.spacer {
+    margin: 0 5%;
+}
+
 @media only screen and (max-width: 1720px) {
     .keyContainer {
-        width: 1277px;
+        width: 1140px;
     }
 
     .cardHeader p {
@@ -128,12 +132,16 @@
         font-size: 20px;
     }
 
+    .spacer {
+        margin: 0 1%;
+    }
+
     .heroCard {
-        width: 30%;
+        width: 33%;
     }
 
     .section {
-        width: 1277px;
+        width: 1140px;
     }
 
     .section h3 {
@@ -146,5 +154,36 @@
 
     .caseStudyMain {
         padding: 80px 0px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .cardHeader p {
+        font-size: 24px;
+    }
+
+    .cardBody p {
+        font-size: 16px;
+    }
+
+
+    .section h3 {
+        font-size: 20px;
+    }
+
+    .keyTitle {
+        font-weight: 600;
+    }
+
+    .keyContent {
+        font-size: 16px;
+    }
+
+    .keyContainer {
+        width: 980px;
+    }
+
+    .section {
+        width: 980px;
     }
 }

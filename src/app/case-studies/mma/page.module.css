@@ -25,6 +25,12 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.imgLogoWrapper {
+    position: relative;
+    width: 124px;
+    height: 124px;
+}
+
 .imgArtWrapper {
     position: relative;
     width: 737px;
@@ -45,5 +51,32 @@
 
     .pageDesignTitle {
         font-size: 24px;
+    }
+
+    .imgLogoWrapper {
+        width: 114px;
+        height: 114px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .imgArtWrapper {
+        width: 471px;
+        height: 388px;
+    }
+
+    .imgLogoWrapper {
+        width: 88px;
+        height: 88px;
+    }
+
+
+    .paletteImgWrapper {
+        width: 1118px;
+        height: 385px;
+    }
+
+    .pageDesignTitle {
+        font-size: 20px;
     }
 }

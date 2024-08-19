@@ -23,12 +23,9 @@ const mmaCaseStudy = () => {
       <div className={baseStyles.heroSection}>
         <div className={baseStyles.heroCard}>
           <div className={baseStyles.cardHeader}>
-            <Image
-              src="/mma-logo.png"
-              width={124}
-              height={124}
-              alt="mma-logo"
-            />
+            <div className={styles.imgLogoWrapper}>
+              <Image fill src="/mma-logo.png" alt="mma-logo" quality={100} />
+            </div>
             <p>lawyer website</p>
           </div>
           <div className={baseStyles.cardBody}>
@@ -40,7 +37,7 @@ const mmaCaseStudy = () => {
             </p>
           </div>
         </div>
-        <div id="ultimate-spacer-jutsu" style={{margin: "0px 5%"}} />
+        <div className={baseStyles.spacer} />
         <div className="animated-component">
           <div className={styles.imgArtWrapper}>
             <Image

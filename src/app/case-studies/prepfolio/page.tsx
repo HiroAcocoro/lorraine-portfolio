@@ -68,7 +68,7 @@ const prepfolioCaseStudy = () => {
             automated grocery list.
           </div>
         </div>
-        <div id="ultimate-spacer-jutsu" style={{margin: "0px 5%"}} />
+        <div className={baseStyles.spacer} />
         <div className="animated-component">
           <Image
             src="/prepfolio-art-1.png"

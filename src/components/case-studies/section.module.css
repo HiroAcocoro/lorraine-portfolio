@@ -19,7 +19,7 @@
 
 @media only screen and (max-width: 1720px) {
     .section {
-        width: 1277px;
+        width: 1140px;
     }
 
     .section h3 {
@@ -32,5 +32,23 @@
 
     .section li {
         font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .section {
+        width: 980px;
+    }
+
+    .section h3 {
+        font-size: 20px;
+    }
+
+    .section h4 {
+        font-size: 20px;
+    }
+
+    .section li {
+        font-size: 16px;
     }
 }

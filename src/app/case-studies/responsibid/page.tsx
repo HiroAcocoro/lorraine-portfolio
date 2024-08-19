@@ -4,10 +4,14 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import caseStudy from "@/constants/responsibid-case-studies";
 import RbPreviewCarousel from "./RbPreviewCarousel";
+import Navbar from "@/components/navbar/navbar";
 
 const responsibidCaseStudy = () => {
   return (
     <div className={baseStyles.main}>
+      <Navbar
+        colorTransition={{primary: "#5C36B2", bg: "rgba(232, 213, 251, 0.19)"}}
+      />
       <div className={baseStyles.heroBg}>
         <Image
           src="/rb-bg-1.png"

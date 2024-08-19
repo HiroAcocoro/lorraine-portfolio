@@ -69,6 +69,23 @@
         width: 551px;
         height: 445px;
     }
+
+    .imgArtWrapper1 {
+        width: 977px;
+        height: 1502px;
+    }
+
+    .carousel {
+        max-width: 1224px;
+        --slide-height: 565px;
+        --slide-spacing: 1rem;
+        --slide-size: 997px;
+    }
+
+    .imgArtWrapper2 {
+        width: 997px;
+        height: 565px;
+    }
 }
 
 @media only screen and (max-width: 1440px) {
@@ -80,5 +97,22 @@
     .imgHeroWrapper {
         width: 471px;
         height: 388px;
+    }
+
+    .imgArtWrapper1 {
+        width: 810px;
+        height: 1243px;
+    }
+
+    .carousel {
+        max-width: 1032px;
+        --slide-height: 471px;
+        --slide-spacing: 1rem;
+        --slide-size: 832px;
+    }
+
+    .imgArtWrapper2 {
+        width: 832px;
+        height: 471px;
     }
 }

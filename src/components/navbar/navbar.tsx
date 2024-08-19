@@ -101,10 +101,20 @@ const Navbar = ({scrollTo, colorTransition}: NavbarProps) => {
           <Link href="/" style={getLinkStyle()}>
             home
           </Link>
-          <Link href="/" style={getLinkStyle()}>
+          <Link
+            href="/projects.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={getLinkStyle()}
+          >
             projects
           </Link>
-          <Link href="/" style={getLinkStyle()}>
+          <Link
+            href="/Lorraine Andrea Decoy - Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={getLinkStyle()}
+          >
             resume
           </Link>
         </div>

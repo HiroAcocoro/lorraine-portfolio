@@ -5,6 +5,18 @@
     margin: 100px 0;
 }
 
+.imgHeroWrapper {
+    width: 744px;
+    height: 601px;
+    position: relative;
+}
+
+.imgLogoWrapper {
+    position: relative;
+    width: 350px;
+    height: 50px;
+}
+
 .sectionSubHeader {
     margin-top: 100px;
     font-size: 32px;
@@ -45,4 +57,28 @@
     justify-content: center;
     height: var(--slide-height);
     user-select: none;
+}
+
+@media only screen and (max-width: 1720px) {
+    .imgLogoWrapper {
+        width: 310px;
+        height: 44px;
+    }
+
+    .imgHeroWrapper {
+        width: 551px;
+        height: 445px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .imgLogoWrapper {
+        width: 254px;
+        height: 36px;
+    }
+
+    .imgHeroWrapper {
+        width: 471px;
+        height: 388px;
+    }
 }

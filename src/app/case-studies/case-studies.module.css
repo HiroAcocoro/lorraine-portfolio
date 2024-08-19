@@ -124,6 +124,11 @@
         width: 1140px;
     }
 
+    .subHeader {
+        font-size: 27px;
+        line-height: 28px;
+    }
+
     .cardHeader p {
         font-size: 27px;
     }
@@ -158,6 +163,10 @@
 }
 
 @media only screen and (max-width: 1440px) {
+    .subHeader {
+        font-size: 24px;
+    }
+
     .cardHeader p {
         font-size: 24px;
     }

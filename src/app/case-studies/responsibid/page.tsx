@@ -20,12 +20,14 @@ const responsibidCaseStudy = () => {
       <div className={baseStyles.heroSection}>
         <div className={baseStyles.heroCard}>
           <div className={baseStyles.cardHeader}>
-            <Image
-              src="/rb-logo.png"
-              width={350}
-              height={50}
-              alt="responsibid-logo"
-            />
+            <div className={styles.imgLogoWrapper}>
+              <Image
+                fill
+                quality={100}
+                src="/rb-logo.png"
+                alt="responsibid-logo"
+              />
+            </div>
           </div>
           <div className={baseStyles.subHeader}>
             The World&apos;s Best Selling Tool For The Home Service Industry
@@ -41,13 +43,14 @@ const responsibidCaseStudy = () => {
         </div>
         <div className={baseStyles.spacer} />
         <div className="animated-component">
-          <Image
-            src="/rb-art-1.png"
-            alt="responsibid-devices-design"
-            width={744}
-            height={601}
-            quality={100}
-          />
+          <div className={styles.imgHeroWrapper}>
+            <Image
+              src="/rb-art-1.png"
+              alt="responsibid-devices-design"
+              quality={100}
+              fill
+            />
+          </div>
         </div>
       </div>
       <div className={baseStyles.caseStudyContainer}>

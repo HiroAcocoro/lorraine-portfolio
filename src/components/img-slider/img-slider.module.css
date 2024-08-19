@@ -51,3 +51,17 @@
         transform: translateY(-33.33%);
     }
 }
+
+@media only screen and (max-width: 1720px) {
+    .imgWrapper {
+        width: 232px;
+        height: 505px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .imgWrapper {
+        width: 202px;
+        height: 439px;
+    }
+}

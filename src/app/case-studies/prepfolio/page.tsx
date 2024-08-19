@@ -1,16 +1,10 @@
 import Image from "next/image";
-import {Luckiest_Guy} from "next/font/google";
 import baseStyles from "../case-studies.module.css";
 import styles from "./page.module.css";
 import caseStudy from "@/constants/prepfolio-case-studies";
 import Section from "@/components/case-studies/Section";
 import ImgSlider from "@/components/img-slider/ImgSlider";
-
-const luckiest_guy = Luckiest_Guy({
-  subsets: ["latin"],
-  display: "swap",
-  weight: "400",
-});
+import Navbar from "@/components/navbar/navbar";
 
 const imgSrcSlides = [
   "/prepfolio-img-slide-1.png",
@@ -29,6 +23,9 @@ const imgSrcSlides = [
 const prepfolioCaseStudy = () => {
   return (
     <div className={baseStyles.main}>
+      <Navbar
+        colorTransition={{primary: "#FC8505", bg: "rgba(255, 212, 1, 0.2)"}}
+      />
       <div className={baseStyles.heroBg}>
         <Image
           src="/prepfolio-bg-1.png"
@@ -41,22 +38,9 @@ const prepfolioCaseStudy = () => {
       <div className={baseStyles.heroSection}>
         <div className={baseStyles.heroCard}>
           <div className={baseStyles.cardHeader}>
-            <Image
-              src="/prepfolio-logo.png"
-              width={109}
-              height={106}
-              alt="mma-logo"
-            />
-            <p
-              className={luckiest_guy.className}
-              style={{
-                textTransform: "uppercase",
-                fontSize: "64px",
-                marginLeft: "1rem",
-              }}
-            >
-              prepfolio
-            </p>
+            <div className={styles.logoImgWrapper}>
+              <Image src="/prepfolio-logo.png" alt="prepfolio-logo" fill />
+            </div>
           </div>
           <p className={styles.caseStudySubHeader}>
             Simplifying Meal Prep, One Recipe at a Time
@@ -70,13 +54,14 @@ const prepfolioCaseStudy = () => {
         </div>
         <div className={baseStyles.spacer} />
         <div className="animated-component">
-          <Image
-            src="/prepfolio-art-1.png"
-            alt="art-prepfolio-devices"
-            width={686}
-            height={602}
-            quality={100}
-          />
+          <div className={styles.imgArtWrapper1}>
+            <Image
+              src="/prepfolio-art-1.png"
+              alt="art-prepfolio-devices"
+              quality={100}
+              fill
+            />
+          </div>
         </div>
       </div>
       <div className={baseStyles.caseStudyContainer}>

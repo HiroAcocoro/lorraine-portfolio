@@ -50,7 +50,7 @@ export default [
   {
     title: "PREPFOLIO",
     logo: {
-      logoSrc: "/prepfolio-logo.png",
+      logoSrc: "/prepfolio-logo-2.png",
       logoClassName: "featuredProjLogo3",
     },
     imgSrc: "/prepfolio-art-1.png",
